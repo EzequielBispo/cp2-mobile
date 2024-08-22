@@ -1,20 +1,18 @@
-import React from "react";  
-import { NativeBaseProvider, View } from 'native-base';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import React from 'react';
+import HomeScreen from './src/screens/HomeScreen';
+import LoginScreen from './src/screens/LoginScreen';
 
-import AdicionarTarefa from "./src/components/AdicionarTarefa";
-import { ProvedorEstadoGlobal } from "./src/hooks/EstadoGlobal";
-
-import ListaTarefas from "./src/components/ListaTarefas";
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <NativeBaseProvider>
-      <ProvedorEstadoGlobal>
-        <View style={{ flex: 1 }}>
-          <AdicionarTarefa />
-          <ListaTarefas />
-        </View>
-      </ProvedorEstadoGlobal>
-    </NativeBaseProvider>
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen name="Login" component={LoginScreen} />
+        <Stack.Screen name="Home" component={HomeScreen} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
