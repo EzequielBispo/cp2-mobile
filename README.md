@@ -13,21 +13,6 @@ Este é um aplicativo simples de lista de tarefas desenvolvido em TypeScript.
 
 Certifique-se de ter o Node.js e o npm instalados em sua máquina.
 
-## Como instalar
-
-1. Clone este repositório:
-
-https://github.com/anaclaraguimaraesremotto/cp2-mobile
-
-2. Navegue até o diretório do projeto:
-
-cd cp2-mobile
-
-3. Instale as dependências:
-
-npm install
-npm install normalize-css-color
-
 ## Como executar
 
 Execute o seguinte comando no terminal:
