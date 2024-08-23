@@ -46,7 +46,7 @@ const LoginScreen: React.FC<Props> = ({ navigation }) => {
 
   return (
     <ImageBackground
-
+      source={require('./../../public/Recifes-de-corais-copiar.jpg')}
       style={styles.background}
     >
       <View style={styles.container}>
